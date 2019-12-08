@@ -17,8 +17,8 @@ usage: aehunter.py [-h] (-d  | -f ) [-r] [-o]
 
 optional arguments:
   -h, --help         show this help message and exit
-  -d, --directory    directory to search and clean
-  -f, --file         file to clean
+  -d, --directory    directory to search
+  -f, --file         file to check
   -r, --recursive    recursively search directory
   -o, --output       write output to file
 ```
