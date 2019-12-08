@@ -3,8 +3,8 @@ import argparse
 
 parser = argparse.ArgumentParser()
 group = parser.add_mutually_exclusive_group(required=True)
-group.add_argument('-d', '--directory', metavar='', help='directory to search and clean')
-group.add_argument('-f', '--file', metavar='', help='file to clean')
+group.add_argument('-d', '--directory', metavar='', help='directory to search')
+group.add_argument('-f', '--file', metavar='', help='file to check')
 parser.add_argument('-r', '--recursive', action='store_true', help='recursively search directory')
 parser.add_argument('-o', '--output', metavar='', help='write output to file')
 args = parser.parse_args()
