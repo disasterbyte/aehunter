@@ -9,8 +9,6 @@ parser.add_argument('-r', '--recursive', action='store_true', help='recursively 
 parser.add_argument('-o', '--output', metavar='', help='write output to file')
 args = parser.parse_args()
 
-if not args.directory.endswith('\\'):
-    args.directory += '\\'
 
 def parse_file(root, filename):
     target_file = os.path.join(root, filename)
@@ -29,6 +27,7 @@ def parse_file(root, filename):
     except Exception as e:
         print('[!] Error: {}'.fomrat(e))
         pass
+
 
 def parse_folder(directory):
     abs_dir = os.path.abspath(directory)
